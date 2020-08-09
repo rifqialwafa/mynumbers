@@ -1,0 +1,361 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  /* background: #faf8ef; */
+  color: #776e65;
+  font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 18px;
+  background-color: #121212
+}
+
+body {
+  margin: 30px 0;
+}
+
+.heading:after {
+  content: "";
+  display: block;
+  clear: both; }
+
+h1.title {
+  font-size: 65px;
+  font-weight: bold;
+  margin: 0;
+  display: block;
+  float: left;
+  color: white;
+}
+
+sup{
+  font-size: 30px;
+  color: lightblue;
+}
+
+#username{
+  color: lightblue;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#changemode{
+  /* border: none; */
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 28px;
+  text-decoration: none;
+  width: 100px;
+  cursor: pointer;
+  padding: 0 15px;
+  height: 28px;
+  display: block;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #333;
+  color: white;
+  border-left: 3px solid lightblue;
+  border-right: 3px solid lightblue;
+}
+
+.div-cn{
+  margin: 20px auto;
+}
+
+#formUserName{
+  color: white;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  /* position: fixed; */
+  /* z-index: 1000; */
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  /* transition: 2s; */
+  -webkit-transition:all .5s ease-in-out;
+}
+
+.overlay-content {
+  margin: 0 auto;
+  display: flex;
+  padding-bottom: 20px;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  cursor: pointer;
+  color: white;
+}
+
+.overlay .closebtn:hover {
+  color: red;
+}
+
+.form-game-container input[type=text] {
+  padding: 15px;
+  font-size: 17px;
+  border: none;
+  float: left;
+  color: white;
+  width: 80%;
+  background: #333;
+  margin-top: 10px;
+  /* border-radius: 5px; */
+  border-left: 3px solid lightblue;
+  /* border-right: 3px solid lightblue; */
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.form-game-container input[type=text]:focus {
+  outline: none;
+}
+
+.form-game-container input[type=text]:hover {
+  background: #3d3d3d;
+}
+
+.form-game-container button {
+  margin-top: 10px;
+  float: left;
+  width: 20%;
+  padding: 15px;
+  background: #333;
+  color: lightblue;
+  font-size: 17px;
+  border: none;
+  border-right: 3px solid lightblue;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  cursor: pointer;
+}
+
+.form-game-container button:hover {
+  opacity: 0.8;
+}
+
+
+.best-container:after {
+  content: "Best";
+  color: lightblue;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 10px;
+  line-height: 1.65; }
+
+a {
+  color: #776e65;
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer; }
+
+strong.important {
+  text-transform: uppercase; }
+
+hr {
+  border: none;
+  border-bottom: 1px solid #d8d4d0;
+  margin-top: 20px;
+  margin-bottom: 30px; }
+
+.container {
+  width: 500px;
+  margin: 0 auto; }
+
+.game-container {
+  margin-top: 20px;
+  /* position: relative; */
+  padding: 15px;
+  cursor: default;
+  width: 500px;
+  /* height: 220px; */
+  box-sizing: border-box; }
+
+.container-score hr{
+  border-color: lightblue;
+}
+
+.form-game-container{
+  margin: 20px 0;
+  /* position: relative; */
+  padding: 15px;
+  display: none;
+  cursor: default;
+  width: 500px;
+  box-sizing: border-box; }
+
+#btnPlay{
+  margin: 15px auto 0 auto;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 28px;
+  text-decoration: none;
+  width: 100px;
+  cursor: pointer;
+  padding: 5px 20px;
+  height: 28px;
+  display: block;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #333;
+  color: white;
+  border-left: 3px solid lightblue;
+  border-right: 3px solid lightblue;
+}
+
+.btn-back{
+  margin: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 28px;
+  text-decoration: none;
+  width: 100px;
+  cursor: pointer;
+  padding: 5px 20px;
+  height: 28px;
+  display: block;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #333;
+  color: white;
+  border-left: 3px solid lightblue;
+  border-right: 3px solid lightblue;
+}
+
+.container-number, .container-choice {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn-10, .btn-100, .btn-prompt, .btn-form {
+  margin: 10px;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 28px;
+  text-decoration: none;
+  width: 100px;
+  cursor: pointer;
+  padding: 15px 50px;
+  height: 28px;
+  display: block;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #333;
+  color: white;
+  /* border: 3px solid lightblue; */
+  /* border-left: 3px solid lightblue;
+  border-right: 3px solid lightblue; */
+}
+
+.tbl-score{
+  margin: 0 auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 400px;
+  color: white;
+  font-size: 15px;
+  /* border: 1px solid #333; */
+}
+
+.tbl-score thead th, .tbl-score tbody td{
+  text-align: center;
+  padding: 10px;
+}
+
+.tbl-score thead th{
+  background-color: #333;
+  color: white;
+}
+
+.tbl-score thead th:first-child{
+  border-radius: 5px 0 0 5px;
+}
+.tbl-score thead th:last-child{
+  border-radius: 0 5px 5px 0;
+  /* border-right: 4px solid lightblue; */
+}
+
+.clear-tbl-row td{
+  padding: 1px !important;
+}
+
+.spanleft, .spanright{
+  width: 100px;
+  /* height: 100%; */
+  padding: 8px 20px;
+  border-radius: 5px;
+  /* border-right: 5px solid lightblue; */
+  background-color: #333;
+}
+
+.txt-blue{
+  color: lightblue;
+}
+
+#cScore{
+  border: none;
+  background: #333;
+  color: white;
+  padding: 7px;
+  font-size: 14px;
+  cursor: pointer;
+  margin: 5px auto 10px auto;
+  border-radius: 5px;
+  border-left: 2px solid lightblue;
+  border-right: 2px solid lightblue;
+}
+
+@media screen and (max-width: 520px) {
+  html, body {
+    font-size: 15px; }
+
+  body {
+    margin: 20px 0;
+    padding: 0 20px; }
+
+  h1.title {
+    font-size: 55px;
+    /* margin-top: 15px;  */
+  }
+
+  sup{
+    font-size: 25px;
+  }
+
+  #username{
+    font-size: 17px;
+  }
+
+  .container {
+    width: 280px;
+    margin: 0 auto; }
+
+
+  .heading {
+    margin-bottom: 10px; }
+
+  .tbl-score{
+    width: 100%;
+    font-size: 13px;
+  }
+  .game-container{
+    width: 100%;
+  }
+
+  .btn-10, .btn-100, .btn-prompt, .btn-form {
+    font-size: 14px;
+    width: 85px;
+    padding: 5px 10px;
+  }
+
+  }

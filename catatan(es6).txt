@@ -1,0 +1,9 @@
+fitur es6 yang digunakan
+- var let const
+- template literal
+- arrow function
+- class
+- foreach (tapi pake do while, sama sama pengulangan)
+- setTimeout
+- callback
+- function method
